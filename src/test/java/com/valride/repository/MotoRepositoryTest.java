@@ -14,8 +14,7 @@ public class MotoRepositoryTest {
     @Mock
     private MotoRepository motoRepository;
 
-    @org.junit.jupiter.api.BeforeEach
-    void setUp() {
+ public MotoRepositoryTest() {
         MockitoAnnotations.openMocks(this);
     }
 
@@ -24,7 +23,6 @@ public class MotoRepositoryTest {
         Moto moto = new Moto();
         moto.setId(1L);
         moto.setNombre("Honda CBR");
-        moto.setDescripcion("Deportiva");
         moto.setImagen("img.jpg");
         moto.setAlquilada(false);
         moto.setPrecio(new java.math.BigDecimal("100.00"));

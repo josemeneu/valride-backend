@@ -35,5 +35,6 @@ public class MotoControllerTest {
         List<Moto> motos = motoController.getAll();
         assertThat(motos).hasSize(2);
         assertThat(motos.get(0).getNombre()).isEqualTo("Yamaha MT-07");
+        assertThat(motos.get(1).getNombre()).isEqualTo("Suzuki GSX-S750");
     }
 }
