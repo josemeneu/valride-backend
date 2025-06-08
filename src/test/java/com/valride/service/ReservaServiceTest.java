@@ -24,7 +24,7 @@ public class ReservaServiceTest {
     }
 
     @Test
-    void testBuscarReservaPorId() {
+    void testSearchReserveByID() {
         Reserva reserva = new Reserva();
         reserva.setId(1L);
         when(reservaRepository.findById(1L)).thenReturn(Optional.of(reserva));
