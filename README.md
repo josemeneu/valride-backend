@@ -16,7 +16,7 @@ Este proyecto es el backend de la aplicación de reservas de motos, desarrollado
    CREATE DATABASE valride;
    mysql -u TU_USUARIO -p valride < init_db.sql
 2. **Configura las credenciales en src/main/resources/application.properties:**
-    spring.datasource.url=jdbc:mysql://localhost:3306/valride?useSSL=false&serverTimezone=UTC
+    ```spring.datasource.url=jdbc:mysql://localhost:3306/valride?useSSL=false&serverTimezone=UTC
     spring.datasource.username=TU_USUARIO
     spring.datasource.password=TU_PASSWORD
     
@@ -24,8 +24,14 @@ Este proyecto es el backend de la aplicación de reservas de motos, desarrollado
     spring.jpa.show-sql=true
     spring.jpa.properties.hibernate.format_sql=true
     spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
-
-server.port=8080 
+    server.port=8080
+    
+3. **Clona el repositorio**
+   ```git clone https://github.com/tu-usuario/valride-backend.git
+      cd valride-backend
+4. **Compila y ejecuta el backend**
+   ```mvn clean install
+      mvn spring-boot:run  
 
 ## Requisitos
 - Java 17+
